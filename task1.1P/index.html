@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <!--Setting the width of the screen to be responsive based on the device width-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Linking css file-->
+    <link rel="stylesheet" href="CSS Files/normalize.css">
+    <link rel="stylesheet" href="CSS/StylingSheet.css">
+</head>
+<body>
+    <!--Opening the header of the body which will not be counted as one of the three sections in the homepage-->
+    <header>
+        <section>
+            <!--Creating a navigation link list which can later be styled in css to create a top navigation bar-->
+            <nav class="topnav">
+                <!--Active class will be used to style the currently active page in a distinct way.-->
+                <a href="index.html" class="active">Home</a>
+                <a href="about.html">About</a>
+                <a href="work.html">Work</a>
+                <a href="contact.html">Contact</a>
+            </nav> 
+        </section>
+        <div class="container">
+            <img src="Images/deakin-logo.jpg" class="headerimage" alt="Deakin Logo">
+            <!--Above Responsive class is used to set image width to match the width of the screen.-->
+            <div class="overlay">
+                <div class="text">Greetings! I am Vejith.</div>
+            </div>
+        </div>
+    </header>
+    <!--Opening the first section of the three section in the homepage-->
+    <!--Article is used instead of section tag so as to make the code easier to navigate-->
+    <article>
+        <section>
+            <div >
+                <img src = "Images/profile-photo.jpeg" class = "profile-photo" alt = "Profile Photo">
+            </div>
+            <div>
+                <p class = "intro" ><center>I am a Software Engineering Student based in Melbourne, Australia</center></p>
+                <p class = "intro"><center>------------------------</center></p>
+                <p class = "intro"><center>Here is some of my work:</center></p>
+            </div>
+        </section>
+        <section>
+       <table class="atable">
+            <tr>
+                <td>
+                    <h3>ArduRover</h3>
+                    <div class = "imagecont">
+                        <img src="Images/ardurover.jpg" class = "Responsive" alt="ArduRover">
+                      </div>
+                </td>
+                <td>
+                    <div class="description">
+                        <p >The ArduRover: The ardurover is a rover which operates on an Arduino Uno. It is a rover whose main purpose is to capture surveillance. The device is made up of a Arduino Uno, Motors, Motordriver, Bluetooth Communication Unit and an ESP32Cam which allows video footage to be captured and can be streamed on a different platform. </p>
+                       </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <h3>RaspCam:</h3>
+                    <div class = "imagecont">
+                        <img src="Images/RaspCam.jpg" class = "Responsive" alt="RaspCam">
+                      </div>
+                </td>
+                <td>
+                    <div class="description">
+                        <p >The RaspCam was a very simple project I created for the unit SIT210. This device operated using a Arduino Uno, A PIR Motion Sensor and a ESP32Cam. The RaspCam is a camera that takes pictures whenever motion is detected. This allows the RaspCam to have basic security functionality at a fraction of the cost of most security cameras and it also uses much less storage. </p>
+                       </div>
+                </td>
+            </tr>
+        </table>
+    </section>
+    <Section>
+        <p class = "intro"><center>----------------------------------------------------------------------------------------------------------------------------------</center></p>
+        <h3>My Photos:</h3>
+        <img src="Images/Deakin1.jpg" class = "gallery" alt="Deakin1">
+        <img src="Images/Deakin2.jpg" class = "gallery" alt="Deakin2">
+        <img src="Images/Deakin3.webp" class = "gallery" alt="Deakin3">
+        <img src="Images/Deakin5.jpg" class = "gallery" alt="Deakin5">
+    </Section>
+</body>
+</html>
